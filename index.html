@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>S&F, ale taki lepszy</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css"/>
+    <link rel="stylesheet" href="icofont/icofont.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="scripts.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <div id="container">
+        <div id="topBar">
+            <button class="textButton"><i class="icon-logout"></i> Wyloguj</button>
+            <button class="textButton"><i class="icon-users"></i> Zmień postać</button>
+            <button class="textButton settingButton"><i class="icofont-gear"></i></button>
+        </div>
+        <main>
+            <nav>
+                <div id="preview">
+                    <div id="hero">
+
+                    </div>
+                    <div id="cash">
+                        <br/><br/>
+                        <span class="iconify" data-icon="si-glyph:money-coin" data-width="16" style="color:rgb(207, 159, 0)"></span>
+                        <br/><br/>
+                        <span class="iconify" data-icon="whh:mushroom" data-width="16" style="color:rgb(202, 90, 15)"></span>
+                    </div>
+                    <div id="exp">
+
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <button onclick="switchView('karczma')" class="navButton textButton">
+                            <i class="icofont-beer"></i>  KARCZMA
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchView('arena')" class="navButton textButton">
+                            <span id="sword" class="iconify" data-icon="mdi:sword" data-width="18"></span>  ARENA
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchView('zbrojownia')" class="navButton textButton">
+                            <i class="icofont-shield-alt"></i>  ZBROJOWNIA
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchView('gabinet magii')" class="navButton textButton">
+                            <i class="icofont-magic"></i>  GABINET MAGII
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchView('stajnia')" class="navButton textButton">
+                            <i class="icofont-camel"></i>  STAJNIA
+                        </button>
+                    </li> 
+                    <li>
+                        <button onclick="switchView('lochy')" class="navButton textButton">
+                            <span class="iconify" data-icon="ri:ancient-gate-fill" data-width="16"></span>  LOCHY
+                        </button>
+                    </li> 
+                    <li>
+                        <button onclick="switchView('twierdza')" class="navButton textButton">
+                            <i class="icofont-castle"></i>  TWIERDZA
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchView('gildia')" class="navButton textButton" id="listBreak">
+                            <span class="iconify" data-icon="entypo:shield" data-width="16"></span>  GILDIA
+                        </button>
+                    </li> 
+                    <li>
+                        <button onclick="switchView('poczta')" class="navButton textButton">
+                            <i class="icofont-ui-message"></i>  POCZTA
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchView('sala chwały')" class="navButton textButton">
+                            <i class="icofont-trophy"></i>  SALA CHWAŁY
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchView('abawuwu')" class="navButton textButton">
+                            <i class="icofont-ui-press"></i>  DR. ABAWUWU
+                        </button>
+                    </li>  
+                </ul>
+            </nav>
+            <div id="content">
+                start
+            </div>
+            <div clear="both"></div>
+        </main>
+    </div>
+</body>
+</html>

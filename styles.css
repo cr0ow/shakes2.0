@@ -1,0 +1,135 @@
+body {
+   background-color: rgb(27, 3, 43);
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 13px;
+}
+
+#container {
+    background-image: url("img/background.png");
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 1200px;
+    min-height: 100%;
+}
+
+#topBar {
+    height: 10%;
+    border: 2px solid #fff;
+    padding: 0px 0px 7px 8px;
+}
+
+.textButton {
+    width: 130px;
+    min-height: 40px;
+    font-family: inherit;
+    font-size: inherit;
+    background-image: url("img/button.png");
+    color: rgb(247, 213, 169);
+    border: 2px solid rgb(207, 159, 0);
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: 0.15s;
+}
+
+.settingButton {
+    position: relative;
+    left: 850px;
+    top: 7px;
+    width: 45px;
+    font-size: 23px;
+    padding: 6px 6px 1px 6px;
+    margin-right: 0px;
+}
+
+.navButton {
+    width: 200px;
+    margin: 3px;
+}
+
+.textButton:hover {
+    background-image: url("img/button-hover.png");
+}
+
+main {
+    height: 675px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+nav {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 220px;
+    border-right: 2px solid #fff;
+    margin: 0px;
+}
+
+#content {
+    /*size: 974x675*/
+    float: left;
+    height: 100%;
+    width: 974px;
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    text-align: center;
+    margin: 0px;
+    padding-top: 8px;
+}
+
+#listBreak {
+    margin-top: 30px;
+}
+
+#preview {
+    height: 125px;
+    border-bottom: 2px solid #fff;
+}
+
+#hero {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 95px;
+    height: 95px;
+    border: 2px solid rgb(207, 159, 0);
+    float: left;
+}
+
+#cash {
+    color:rgb(247, 213, 169);
+    font-size: 15px;
+    width: 107px;
+    height: 100%;
+    justify-content: left;
+    float: left;
+    padding-left: 14px;
+}
+
+#exp {
+    clear: both;
+    width: 95px;
+    height: 20px;
+    border: 2px solid rgb(207, 159, 0);
+    border-top: none;
+    position: relative;
+    left: 5px;
+    bottom: 28px;
+}
+
+.iconify {
+    position: relative;
+    top: 3px;
+}
+
+#sword {
+    top: 4px;
+}
