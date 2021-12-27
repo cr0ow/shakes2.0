@@ -1,5 +1,6 @@
 body {
-   background-color: rgb(27, 3, 43);
+    /*background-image: url("img/body.jpg");*/
+    background-color: rgb(27, 3, 43);
     font-family: 'Balsamiq Sans', cursive;
     font-size: 13px;
 }
@@ -8,9 +9,7 @@ body {
     background-image: url("img/background.png");
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
     width: 1200px;
-    min-height: 100%;
 }
 
 #topBar {
@@ -47,15 +46,19 @@ body {
     margin: 3px;
 }
 
+.viewButton {
+    position: relative;
+    border: 1px solid #fff;
+}
+
 .textButton:hover {
     background-image: url("img/button-hover.png");
 }
 
 main {
     height: 675px;
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border: 2px solid #fff;
+    border-top: none;
 }
 
 nav {
@@ -64,11 +67,11 @@ nav {
     height: 100%;
     width: 220px;
     border-right: 2px solid #fff;
-    margin: 0px;
 }
 
 #content {
     /*size: 974x675*/
+    background-image: url("img/town.png");
     float: left;
     height: 100%;
     width: 974px;
@@ -104,16 +107,6 @@ ul {
     float: left;
 }
 
-#cash {
-    color:rgb(247, 213, 169);
-    font-size: 15px;
-    width: 107px;
-    height: 100%;
-    justify-content: left;
-    float: left;
-    padding-left: 14px;
-}
-
 #exp {
     clear: both;
     width: 95px;
@@ -125,6 +118,16 @@ ul {
     bottom: 28px;
 }
 
+#cash {
+    color:rgb(247, 213, 169);
+    font-size: 15px;
+    width: 107px;
+    height: 100%;
+    justify-content: left;
+    float: left;
+    padding-left: 14px;
+}
+
 .iconify {
     position: relative;
     top: 3px;
@@ -132,4 +135,11 @@ ul {
 
 #sword {
     top: 4px;
+}
+
+#darken {
+    /*opacity: 0.5;*/
+    background-color: #000;
+    width: 1200px;
+    height: 734.4px;
 }
