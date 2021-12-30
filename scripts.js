@@ -5,7 +5,13 @@ function switchView(name) {
     const back = document.createElement('button')
     back.classList = 'exitButton'
     back.setAttribute('onclick','back()')
+    content.append(back)
 
+    const container = document.createElement('div')
+    container.style.height = '91%'
+    container.style.width = '100%'
+    container.style.textAlign = 'center'
+    content.append(container)
 
     switch(name) {
         case 'karczma':
@@ -39,7 +45,17 @@ function switchView(name) {
             content.style.backgroundImage = 'url(img/fame.png)'
             break
     }
-    content.append(back);
+}
+
+function tavernView(content) {
+    const progress = document.createElement('progress')
+    const progressBack = document.createElement('progress')
+    progress.classList = 'progress'
+    progressBack.classList = 'progressBack'
+    progress.max = '100'
+    progress.value = '60'
+    content.append(progress)
+    content.append(progressBack)
 }
 
 function back() {
