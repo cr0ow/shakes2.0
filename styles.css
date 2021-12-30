@@ -1,6 +1,5 @@
 body {
     background-image: url("img/body.jpg");
-    background-color: rgb(27, 3, 43);
     font-family: 'Balsamiq Sans', cursive;
     font-size: 13px;
 }
@@ -19,12 +18,13 @@ body {
 }
 
 .textButton {
-    width: 130px;
+    width: 150px;
     min-height: 40px;
     font-family: inherit;
     font-size: inherit;
     background-image: url("img/button.png");
     color: rgb(247, 213, 169);
+    letter-spacing: 1px;
     border: 2px solid rgb(207, 159, 0);
     border-radius: 4px;
     margin-right: 10px;
@@ -33,12 +33,11 @@ body {
 
 .settingButton {
     position: relative;
-    left: 850px;
+    left: 810px;
     top: 7px;
     width: 45px;
     font-size: 23px;
     padding: 6px 6px 1px 6px;
-    margin-right: 0px;
 }
 
 .navButton {
@@ -78,6 +77,7 @@ nav {
     text-align: center;
     color: #fff;
     font-size: 48px;
+    overflow: hidden;
 }
 
 ul {
@@ -157,8 +157,7 @@ ul {
     position: relative;
     width: 600px;
     height: 40px;
-    right: 20px;
-    top: 530px;
+    bottom: 350px;
     z-index: 1;
     background-color: transparent;
 }
@@ -178,8 +177,7 @@ ul {
     position: relative;
     width: 600px;
     height: 40px;
-    left: -12px;
-    top: 472px;
+    bottom: 408px;
     background-color: transparent;
 }
 
@@ -190,27 +188,56 @@ ul {
     border-radius: 15px;
 }
 
-.window {
+.card {
     display: inline-block;
     z-index: 1;
     margin: 13px;
     width: 200px;
     height: 300px;
-    border: 2px solid rgb(192, 0, 0);
+    bottom: 341px;
+    position: relative;
+    border: none;
     border-radius: 15px;
+    text-align: center;
     background-color: transparent;
-    color: #fff;
-    font-size: large;
+    font-family: inherit;
+    color: rgb(247, 213, 169);
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    outline: none;
+    transition: 0.15s;
 }
 
-.windowBack {
+.card:hover {
+    border: 1px solid rgb(207, 159, 0);
+    box-shadow: 3px -3px 3px 3px rgb(207, 159, 0), -3px 3px 3px 3px rgb(207, 159, 0);
+}
+
+.cardBack {
     display: inline-block;
-    bottom: 326px;
     margin: 13px;
-    position: relative;
     width: 200px;
     height: 300px;
     border-radius: 15px;
     background: #000;
     opacity: 0.7;
+}
+
+.window {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 40px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fff;
+}
+
+.header {
+    color:rgb(247, 213, 169);
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px #000;
+    position: relative;
+    bottom: 300px;
 }

@@ -50,16 +50,39 @@ function switchView(name) {
 
 function tavernView(content) {
     for(i=0; i<4; i++) {
-        const window = document.createElement('button')
-        window.classList = 'window'
-        window.innerText = 'value'
-        content.append(window)
+        const windowBack = document.createElement('div')
+        windowBack.classList = 'cardBack'
+        content.append(windowBack)
     }
 
     for(i=0; i<4; i++) {
-        const windowBack = document.createElement('div')
-        windowBack.classList = 'windowBack'
-        content.append(windowBack)
+        const window = document.createElement('button')
+        window.classList = 'card'
+        const photo = document.createElement('div')
+        photo.classList = 'window'
+        switch(i) {
+            case 0:
+                photo.style.backgroundImage = 'url("img/innkeeper.png")'
+                window.append(photo)
+                window.append('karczmarz')
+                break;
+            case 1:
+                photo.style.backgroundImage = 'url("img/traveller.png")'
+                window.append(photo)
+                window.append('podróżnik')
+                break;
+            case 2:
+                photo.style.backgroundImage = 'url("img/gambler.png")'
+                window.append(photo)
+                window.append('hazardzista')
+                break;
+            case 3:
+                photo.style.backgroundImage = 'url("img/toilet.png")'
+                window.append(photo)
+                window.append('toaleta')
+                break;
+        }
+        content.append(window)
     }
 
     const progress = document.createElement('progress')
@@ -67,7 +90,12 @@ function tavernView(content) {
     progress.classList = 'progress'
     progressBack.classList = 'progressBack'
     progress.max = '100'
-    progress.value = '100'
+    progress.value = '70'
+    const span = document.createElement('span')
+    span.classList = 'header'
+    span.innerHTML = '<h6>AWANTURNICZOŚĆ:  ' + progress.value.toString() +  '</h6>'
+    content.append(span)
+    
     content.append(progress)
     content.append(progressBack)
 }
