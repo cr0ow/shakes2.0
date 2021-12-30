@@ -29,7 +29,6 @@ body {
     border-radius: 4px;
     margin-right: 10px;
     transition: 0.15s;
-    outline: chartreuse;
 }
 
 .settingButton {
@@ -156,19 +155,62 @@ ul {
 
 .progress {
     position: relative;
+    width: 600px;
+    height: 40px;
+    right: 20px;
     top: 530px;
+    z-index: 1;
     background-color: transparent;
 }
 
 .progress::-webkit-progress-bar {
     display: block;
-    background-color: #000;
-    border: 3px solid rgb(207, 159, 0);
-    border-radius: 30px;
+    border: 5px solid transparent;
     background-color: transparent;
 }
 
 .progress::-webkit-progress-value {
-    background-color: rgb(207, 159, 0);
-    border-radius: 30px;
+    background: -webkit-linear-gradient(45deg, rgb(207, 159, 0), rgb(99, 76, 0));
+    border-radius: 13px;
+}
+
+.progressBack {
+    position: relative;
+    width: 600px;
+    height: 40px;
+    left: -12px;
+    top: 472px;
+    background-color: transparent;
+}
+
+.progressBack::-webkit-progress-bar {
+    display: block;
+    background-color: #000;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+
+.window {
+    display: inline-block;
+    z-index: 1;
+    margin: 13px;
+    width: 200px;
+    height: 300px;
+    border: 2px solid rgb(192, 0, 0);
+    border-radius: 15px;
+    background-color: transparent;
+    color: #fff;
+    font-size: large;
+}
+
+.windowBack {
+    display: inline-block;
+    bottom: 326px;
+    margin: 13px;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    background: #000;
+    opacity: 0.7;
 }

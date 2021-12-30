@@ -15,6 +15,7 @@ function switchView(name) {
 
     switch(name) {
         case 'karczma':
+            tavernView(container)
             content.style.backgroundImage = 'url(img/tavern.png)'
             break
         case 'arena':
@@ -48,12 +49,25 @@ function switchView(name) {
 }
 
 function tavernView(content) {
+    for(i=0; i<4; i++) {
+        const window = document.createElement('button')
+        window.classList = 'window'
+        window.innerText = 'value'
+        content.append(window)
+    }
+
+    for(i=0; i<4; i++) {
+        const windowBack = document.createElement('div')
+        windowBack.classList = 'windowBack'
+        content.append(windowBack)
+    }
+
     const progress = document.createElement('progress')
     const progressBack = document.createElement('progress')
     progress.classList = 'progress'
     progressBack.classList = 'progressBack'
     progress.max = '100'
-    progress.value = '60'
+    progress.value = '100'
     content.append(progress)
     content.append(progressBack)
 }
