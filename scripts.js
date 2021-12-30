@@ -1,4 +1,8 @@
 function switchView(name) {
+    const where = document.getElementById('where')
+    if(where.innerText == name) return
+    where.innerText = name
+
     const content = document.getElementById('content')
     content.innerHTML = null
 
@@ -67,7 +71,7 @@ function tavernView(content) {
                 window.append('karczmarz')
                 break;
             case 1:
-                photo.style.backgroundImage = 'url("img/traveller.png")'
+                photo.style.backgroundImage = 'url("img/traveller' + random(4).toString() + '.png")'
                 window.append(photo)
                 window.append('podróżnik')
                 break;
@@ -95,7 +99,6 @@ function tavernView(content) {
     span.classList = 'header'
     span.innerHTML = '<h6>AWANTURNICZOŚĆ:  ' + progress.value.toString() +  '</h6>'
     content.append(span)
-    
     content.append(progress)
     content.append(progressBack)
 }
@@ -109,4 +112,10 @@ function back() {
 function options() {
     body = document.getElementsByTagName('body')
     body.setAttribute()
+}
+
+function random(max) {
+    number = Math.ceil(Math.random()*max)
+    console.log(number)
+    return number
 }

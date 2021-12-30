@@ -17,6 +17,10 @@ body {
     padding: 0px 0px 7px 8px;
 }
 
+#where {
+    display: none;
+}
+
 .textButton {
     width: 150px;
     min-height: 40px;
