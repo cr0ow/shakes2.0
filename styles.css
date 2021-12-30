@@ -153,3 +153,22 @@ ul {
 .exitButton:hover {
     background-image: url("img/cross_hover.png");
 }
+
+.progress {
+    position: relative;
+    top: 530px;
+    background-color: transparent;
+}
+
+.progress::-webkit-progress-bar {
+    display: block;
+    background-color: #000;
+    border: 3px solid rgb(207, 159, 0);
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.progress::-webkit-progress-value {
+    background-color: rgb(207, 159, 0);
+    border-radius: 30px;
+}
