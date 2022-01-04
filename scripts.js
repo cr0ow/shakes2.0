@@ -6,9 +6,14 @@ function switchView(name) {
     const content = document.getElementById('content')
     content.innerHTML = null
 
+    if(name == 'miasto') {
+        townView(content)
+        return
+    }
+
     const back = document.createElement('button')
     back.classList = 'exitButton'
-    back.setAttribute('onclick','back()')
+    back.setAttribute('onclick','switchView("miasto")')
     content.append(back)
 
     const container = document.createElement('div')
@@ -52,6 +57,36 @@ function switchView(name) {
     }
 }
 
+function townView(content) {
+    content.style.backgroundImage = 'url(img/town.png)'
+    const title = document.createElement('span')
+    title.innerHTML = '<h3>Witaj w mieście S&F!</h3>'
+    title.style.textShadow = '2px 2px 2px #000'
+    title.style.color = 'rgb(247, 213, 169)'
+    content.append(title)
+
+    const wartaBack = document.createElement('div')
+    wartaBack.classList = 'cardBack'
+    const warta = document.createElement('button')
+    warta.classList = 'card'
+    const photo = document.createElement('div')
+    photo.classList = 'window'
+    photo.style.backgroundImage = 'url("img/tower.png")'
+
+    warta.style.position = 'relative'
+    warta.style.top = '80px'
+    warta.style.left = '240px'
+
+    wartaBack.style.position = 'relative'
+    wartaBack.style.top = '159px'
+    wartaBack.style.left = '467px'
+
+    warta.append(photo)
+    warta.append('warta')
+    content.append(wartaBack)
+    content.append(warta)
+}
+
 function tavernView(content) {
     for(i=0; i<4; i++) {
         const windowBack = document.createElement('div')
@@ -71,7 +106,7 @@ function tavernView(content) {
                 window.append('karczmarz')
                 break;
             case 1:
-                photo.style.backgroundImage = 'url("img/traveller' + random(4).toString() + '.png")'
+                photo.style.backgroundImage = 'url("img/traveller' + random(1, 4).toString() + '.png")'
                 window.append(photo)
                 window.append('podróżnik')
                 break;
@@ -107,6 +142,8 @@ function back() {
     const content = document.getElementById('content')
     content.innerHTML = null
     content.style.backgroundImage = 'url(img/town.png)'
+    const where = document.getElementById('where')
+    where.innerText = 'town'
 }
 
 function options() {
@@ -114,8 +151,6 @@ function options() {
     body.setAttribute()
 }
 
-function random(max) {
-    number = Math.ceil(Math.random()*max)
-    console.log(number)
-    return number
+function random(min, max) {
+    return Math.ceil(Math.random()*max)
 }

@@ -82,6 +82,7 @@ nav {
     color: #fff;
     font-size: 48px;
     overflow: hidden;
+    transition: 0.1s;
 }
 
 ul {
