@@ -1,2 +1,2 @@
 # shakes2.0
-Tutaj projektujemy piękną gierę, którą po ukończeniu będzie można się nawet pochwalić.
+My own version of popular online game Shakes and Fidget.
